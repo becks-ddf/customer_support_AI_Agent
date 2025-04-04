@@ -32,7 +32,7 @@ st.title("Chat Assistant")
 query = st.text_input("Enter your question:")
 
 if query:
-    threshold = 0.9
+    threshold = 0.85
     results = vectorstore.similarity_search_with_score(query, k=1)
     doc, score = results[0]
 
